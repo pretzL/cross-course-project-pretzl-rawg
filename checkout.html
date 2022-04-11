@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="GameHub, Gamer, Games, Marketplace, Buy, Sell, CSS, HTML, Noroff" />
+    <meta name="description" content="Welcome to GameHub - The Universe of Games" />
+    <title>Checkout | GameHub</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&family=Tourney:ital,wght@1,700&display=swap" rel="stylesheet" />
+    <!-- Hotjar Tracking Code for https://pretzl-gamehub.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2877482, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="content-container">
+        <header class="flex-column">
+          <div class="flex header-container">
+            <a href="index.html">
+              <img src="images/GameHub_Logo.png" alt="GameHub Logo" class="header-logo" />
+            </a>
+            <form class="searchbar-pos">
+              <input type="text" name="search" id="search" />
+              <button class="search-button" type="submit"><span class="material-icons"> search </span></button>
+            </form>
+            <div class="navigation-menu">
+              <label class="menu-dropdown" for="menu-dropdown"><span class="material-icons md-36"> menu </span></label>
+            </div>
+            <div class="header-icons">
+              <div class="cart-icons">
+                <a href="cart.html"><span class="material-icons md-36 right-nav-icon"> shopping_cart </span></a>
+                <div class="cart-number-icon"></div>
+              </div>
+              <a href="login.html"><span class="material-icons md-36 right-nav-icon"> account_circle </span></a>
+            </div>
+          </div>
+          <form class="mobile-searchbar searchbar-pos">
+            <input type="text" name="search" id="mobile-search" />
+            <button class="search-button" type="submit"><span class="material-icons"> search </span></button>
+          </form>
+          <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="/login.html" class="nav-link">Login</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact Us</a></li>
+              <li class="nav-item"><a href="/all-games.html" class="nav-link">Games</a></li>
+              <li class="nav-item"><a href="/filtered-game-categories.html?parameter=new" class="nav-link">New Releases</a></li>
+              <li class="nav-item"><a href="/filtered-game-categories.html?parameter=top" class="nav-link">Top Games</a></li>
+              <li class="nav-item"><a href="/cart.html" class="nav-link">Cart</a></li>
+              <li class="nav-item"><a href="/user-profile.html" class="nav-link">My Profile</a></li>
+              <li class="nav-item"><a href="/sell.html" class="nav-link">Sell</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section class="header-image-thinner">
+          <h5 class="visually-hidden">Page Header section</h5>
+          <h1>Checkout</h1>
+        </section>
+        <main>
+          <div class="checkout-page">
+            <div class="progress-bar">
+              <div class="progress-step progress-active">1</div>
+              <div class="progress-step">2</div>
+              <div class="progress-step">3</div>
+            </div>
+            <div class="validator-container"><p>Checkout success! You will receive an order confirmation in your email inbox shortly.</p></div>
+            <form data-multi-step class="multi-step-form">
+              <div data-step class="checkout-card item-card active">
+                <h2 class="checkout-grid1">Your Items</h2>
+                <div class="checkout-container checkout-grid2"></div>
+                <h4 class="item-total-price checkout-grid4">Total:</h4>
+                <button type="button" class="btn checkout-grid5" data-next>Next</button>
+              </div>
+              <div data-step class="checkout-card user-info-card">
+                <h2>User Info</h2>
+                <div class="checkout-form-group">
+                  <label for="name">Name</label>
+                  <input type="name" name="name" id="name" required />
+                </div>
+                <div class="checkout-form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div class="checkout-form-group">
+                  <label for="address">Address</label>
+                  <input type="text" name="address" id="address" required />
+                </div>
+                <div class="checkout-form-group">
+                  <label for="postcode">Postcode</label>
+                  <input type="number" name="postcode" id="postcode" required />
+                </div>
+                <div class="checkout-form-group">
+                  <label for="city">City</label>
+                  <input type="text" name="city" id="city" required />
+                </div>
+                <div class="checkout-form-group">
+                  <label for="country">Country</label>
+                  <input type="text" name="country" id="country" required />
+                </div>
+                <div class="checkout-form-buttons">
+                  <button type="button" class="btn" data-previous>Previous</button>
+                  <button type="button" class="btn" data-next>Next</button>
+                </div>
+              </div>
+              <div data-step class="checkout-card shipping-card">
+                <h2>Billing</h2>
+                <div class="checkout-form-group">
+                  <label for="card-number">Card Number</label>
+                  <input type="number" name="card-number" id="card-number" required />
+                </div>
+                <div class="checkout-form-group">
+                  <label for="card-date">MM/YY</label>
+                  <input type="month" name="card-date" id="card-date" required />
+                </div>
+                <div class="checkout-form-group">
+                  <label for="card-cvc">CVC</label>
+                  <input type="number" name="card-cvc" id="card-cvc" required />
+                </div>
+                <div class="checkout-form-buttons">
+                  <button type="button" class="btn" data-previous>Previous</button>
+                  <button type="submit" class="btn">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </main>
+        <footer>
+          <div class="footer-first">
+            <h4>Stay Connected</h4>
+            <div class="footer-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <p class="powered-by">Powered by <a href="https://rawg.io/apidocs">Rawg API</a></p>
+          </div>
+          <div class="footer-second">
+            <h5>GameHub</h5>
+            <a href="contact.html">Contact Us</a>
+            <a href="create-account.html">Create Account</a>
+            <a href="login.html">Login</a>
+          </div>
+          <div class="footer-third">
+            <h5>Quick Links</h5>
+            <a href="all-games.html">Games</a>
+            <a href="user-profile.html">My Profile</a>
+            <a href="all-games.html">Marketplace</a>
+          </div>
+          <div class="footer-fourth">
+            <h4>The Universe of Games</h4>
+            <p>
+              At GameHub, it is our mission to make sure you find your next favorite game, at a price you're happy with. Our Advanced algorithm will suggest games based on previous
+              purchases, wishlist items and which games you're looking at the most to make sure you find the perfect fit for you. When you're done playing, you can resell the game
+              on our marketplace so others can enjoy that game as much as you have -while making some of your money back!
+            </p>
+          </div>
+          <div class="footer-fifth">
+            <p class="footer-copyright">&copy; 2022 Eric Pretzinger</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/components/error.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/checkout.js" type="module"></script>
+    <script src="/js/components/cartFunctions.js" type="module"></script>
+    <script src="/js/search.js"></script>
+  </body>
+</html>
